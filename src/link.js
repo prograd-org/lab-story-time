@@ -8,6 +8,7 @@ var nextString = [
     "Haunting discovery",
     "Rising paranoia"
 ];
+
 function updateProgression(i, p) {
     filler.innerHTML = "Task: Complete Trial " + (i + 1) + "<br>Next: " + nextString[i];
     if (story.lastElementChild == filler)
@@ -62,3 +63,36 @@ document.getElementById("link").addEventListener("click", function (e) {
     story.innerHTML += theEnd;
     window.scrollBy(0, 1000);
 });
+
+function moreAboutHome(address, distanceFromTown, hasNeighbours) {
+    return typeof (address) + typeof (distanceFromTown) + typeof (hasNeighbours);
+}
+
+function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
+    return ((typeof (parents) == "String") && (typeof (noOfSiblings) == "Number") && (typeof (isNuclearFamily) == "Boolean"));
+}
+
+function doesFriendExist(ageInText, ageInNumber) {
+    if (isNaN(ageInText)) {
+        return ageInText;
+    } else if (isNaN(ageInNumber)) {
+        return ageInNumber;
+    } else {
+        console.log("Yes exist");
+    }
+}
+
+function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInMeters, metersToTravel) {
+    var sweetsLeft = totalNoOfSweets - sweetsConsumedByKaren - (sweetsConsumedInMeters * metersToTravel);
+    return (sweetsLeft / 2);
+}
+
+function convertToCelsius(fahrenheit) {
+    return ((fahrenheit - 32) * (5 / 9));
+}
+
+function aDifficultChoice(choice) {
+    if (choice == 1) {
+        return console.log("Take her daughter to adoctor");
+    }
+}
