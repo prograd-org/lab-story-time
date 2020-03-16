@@ -5,8 +5,9 @@
 var a = 0;
 var b = 0;
 var str = "";
-var moreAboutHome(str, a, b) {
 
+function moreAboutHome(address, distanceFromTown, hasNeighbours) {
+  return address + distanceFromTown + hasNeighbours;
 }
 describe("Concatenate the types of data and return it - moreAboutHome", function () {
   it("Defines moreAboutHome", function () {
