@@ -2,10 +2,14 @@
 //We've got some basic info about Karen's home
 //Debug the type of data provided
 //Return the types concatenated in a single variable
-
+function moreAboutHome(address, distanceFromTown, hasNeighbours) {
+    return datatype = (typeof (address) + typeof (distanceFromTown) + typeof (hasNeighbours));
+}
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
+
+function moreAboutKaren()
 
 //Progression 3:
 //Lily is suspicious about Karen's new friend
