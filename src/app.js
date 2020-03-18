@@ -3,14 +3,55 @@
 //Debug the type of data provided
 //Return the types concatenated in a single variable
 
+function moreAboutHome(address, distanceFromTown, hasNeighbours) {
+    var a = typeof address;
+    var b = typeof distanceFromTown;
+    var c = typeof hasNeighbours;
+    return a + b + c;
+}
+moreAboutHome();
+
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
+
+function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
+    if (typeof parents === "string") {
+        return true;
+    } else {
+        return false;
+    }
+    if (typeof noOfSiblings == "number") {
+        return true;
+    } else {
+        return false;
+    }
+    if (typeof isNuclearFamily == "boolean") {
+        return true;
+    } else {
+        return false;
+    }
+}
+moreAboutKaren();
 
 //Progression 3:
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
+
+function doesFriendExist(ageInText, ageInNumber) {
+    if (ageInNumber == NaN) {
+        return NaN;
+    } else {
+        return ageInNumber;
+    }
+    if (ageInText == NaN) {
+        return NaN;
+    } else {
+        return ageInText;
+    }
+}
+doesFriendExist();
 
 //Progression 4:
 //Lily gave Karen x sweets
@@ -18,6 +59,34 @@
 //On her way to the river, she ate another z sweets every n meters travelled
 //Her friend divided the remaining sweets into 2 parts for each
 //How many sweets did her friend get to eat?
+
+function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMeters, metersToTravel) {
+    if (totalNoOfSweets == NaN || sweetsConsumedByKaren == NaN || sweetsConsumedInNMeters == NaN || metersToTravel == NaN) {
+        return "\'No sweets for Karen\'s friend\'";
+    }
+    if (sweetTooth[0] == undefined || sweetTooth[1] == undefined || sweetTooth[2] == undefined || sweetTooth[3] == undefined) {
+        return "\'No sweets for Karen\'s friend\'";
+    }
+    if (totalNoOfSweets == 0 && sweetsConsumedByKaren == 0 && sweetsConsumedInNMeters == 0 && metersToTravel == 0) {
+        return 0;
+    }
+    var total_sweets_consumed_by_karan = sweetsConsumedByKaren + sweetsConsumedInNMeters;
+    if (totalNoOfSweets == total_sweets_consumed_by_karan) {
+        return 0;
+    }
+
+}
+sweetTooth();
+
+
+
+
+
+
+
+
+
+
 
 //Progression 5:
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
