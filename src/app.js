@@ -41,16 +41,19 @@ function doesFriendExist(ageInText, ageInNumber) {
 
 totalNoOfSweets = x;
 function sweetTooth(totalNoOfSweets, sweetsConsumedbyKaren, sweetsConsumedInMeters, metersToTravel) {
-    sweetsConsumedbyKaren = y + sweetsConsumedInMeters * metersToTravel;
-    sweets_remains = totalNoOfSweets - sweetsConsumedbyKaren;
-    sweetsConsumedbyfriend = sweets_remains / 2;
 
     if (typeof (totalNoOfSweets) || typeof (sweetsConsumedbyKaren) || typeof (sweetsConsumedInMeters) || typeof (metersToTravel) === NaN) {
-        sweetsConsumedbyfriend = 'No Sweets';
+        return ("No sweets for Karen\'s friend");
+
+    }
+    if (typeof (totalNoOfSweets) && typeof (sweetsConsumedbyKaren) && typeof (sweetsConsumedInMeters) && typeof (metersToTravel) === 0) {
+        return 0;
+
     }
 
-    return sweetsConsumedbyfriend;
 
+
+    
 
 }
 
