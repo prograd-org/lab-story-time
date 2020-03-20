@@ -46,15 +46,7 @@ function sweetTooth(totalNoOfSweets, sweetsConsumedbyKaren, sweetsConsumedInMete
         return ("No sweets for Karen\'s friend");
 
     }
-    if (typeof (totalNoOfSweets) && typeof (sweetsConsumedbyKaren) && typeof (sweetsConsumedInMeters) && typeof (metersToTravel) === 0) {
-        return 0;
-
-    }
-
-
-
     
-
 }
 
 //Progression 5:
