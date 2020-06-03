@@ -17,6 +17,12 @@ function moreAboutKaren(parents, noOfSiblings, isNuclearFamily){
         return false;
     }
 }
+
+//What is the difference between double quotes and backtick?
+//double quotes can only hold string literals but backticks can hold variable as well.
+//From MDN : Template literals are string literals allowing embedded expressions. 
+
+
 //Progression 3:
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
