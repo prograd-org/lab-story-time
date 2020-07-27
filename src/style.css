@@ -19,9 +19,9 @@ a {
     font-weight: bold;
 }
 .footers{
-    position: absolute;
+    position: relative;
     font-family: 'Courier New', Courier, monospace;
-	top: 750px;
+	bottom: 0;
 	margin-left: 80px;
 	font-size: 18px;
 	font-family: Nunito Sans;
