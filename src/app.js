@@ -25,16 +25,11 @@ function moreAboutKaren(parents, noOfSiblings, isNuclearFamily) {
 //Check which one those is not a number (NaN) and return that value
 
 function doesFriendExist(ageInText, ageInNumber) {
-    if (isNaN(ageInText)) {
-        return NaN;
-    } else if (isNaN(ageInNumber)) {
-        return NaN;
-    } else if (ageInText === "NaN") {
-        console.log("NaN");
-        return stringOf(NaN);
-
+    let temp;
+    if (isNaN(ageInText) == true) {
+        return ageInText;
     } else {
-        return ageInText, ageInNumber;
+        return ageInNumber;
     }
 }
 
