@@ -18,10 +18,11 @@ a {
     color: firebrick;
     font-weight: bold;
 }
-.footers{
+
+.footers {
     position: absolute;
     font-family: 'Courier New', Courier, monospace;
-    margin-top : 2px;
+    margin-top: 2px;
     margin-left: 80px;
     font-size: 18px;
     font-family: Nunito Sans;
