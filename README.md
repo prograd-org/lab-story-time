@@ -4,24 +4,6 @@
 
 This is a short story about a girl named Karen and her friend. Run `index.html` to view the story. You will see that the story is incomplete. On finishing each _Trial_, a part of the story will be unlocked. Go to the `src/app.js` file and complete all the unfinished code to find out how this story ends.
 
-## What should you do
-```
-Fork this repo
-Clone this repo
-Practice JavaScript Basics - Datatypes, Operators, Conditions
-```
-
-## How To Submit
-```
-Upon completion, run the following commands:
-
-git add .
-git commit -m "ProGrad ID"
-git push origin master
-
-And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
-```
-
 ## Tests
 
 Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read carefully the instructions to understand what should be done.
