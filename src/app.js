@@ -2,7 +2,10 @@
 //We've got some basic info about Karen's home
 //Debug the type of data provided
 //Return the types concatenated in a single variable
-
+moreAboutHome=( address, distanceFromTown, hasNeighbours)=>{
+var x= typeof(address)+typeof(distanceFromTown)+typeof(hasNeighbours);
+return(x);
+}
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
