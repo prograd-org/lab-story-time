@@ -95,3 +95,10 @@ if(choice==1){
 //Take all of Lily's strategies and concatenate them to a single vara
 //Seperate the strategies by a single space
 //Return the length of the complete strategy
+function consoleKaren(strategies){
+    let s="";
+    for(var i=0;i<strategies.length;i++){
+        s=s+strategies[i]+" ";
+    }
+    return(s.length)
+}
