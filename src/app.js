@@ -21,7 +21,14 @@ moreAboutKaren=(parents, noOfSiblings, isNuclearFamily)=>{
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
-
+doesFriendExist=(ageInText, ageInNumber)=>{
+    if(isNaN(ageInText)){
+        return(ageInText);
+    }
+    else if (isNaN(ageInNumber)) {
+        return(ageInNumber);
+    }
+}
 //Progression 4:
 //Lily gave Karen x sweets
 //Karen ate y sweets herself
