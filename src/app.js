@@ -9,7 +9,14 @@ return(x);
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
-
+moreAboutKaren=(parents, noOfSiblings, isNuclearFamily)=>{
+    if(typeof(parents)=='string'&&typeof(noOfSiblings)=='number'&&typeof(isNuclearFamily)=='boolean'){
+        return(true);
+    }
+    else{
+        return(false);
+    }
+}
 //Progression 3:
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
