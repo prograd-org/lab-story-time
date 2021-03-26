@@ -76,7 +76,20 @@ convertToCelsius=(fahrenheit)=>{
 //3. Counsel her daughter herself
 //4. Lock her daughter in her room
 //Given a value, return which of these above actions Lily would take
-
+aDifficultChoice=(choice)=>{
+    if(choice==1){
+        return("Take her daughter to a doctor");
+    }
+    else if(choice==-1){
+        return("Break down and give up all hope");
+    }
+    else if (typeof(choice)=='undefined') {
+        return("Wasn't able to decide");
+    }
+    else if(choice=='I give up'){
+        return("Refused to do anything for Karen");
+    }
+}
 //Progression 7:
 //Lily realized that she'd hurt her daughter
 //All she wants now is for her to stop crying
