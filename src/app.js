@@ -35,7 +35,22 @@ doesFriendExist=(ageInText, ageInNumber)=>{
 //On her way to the river, she ate another z sweets every n meters travelled
 //Her friend divided the remaining sweets into 2 parts for each
 //How many sweets did her friend get to eat?
-
+sweetTooth=(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMeters, metersToTravel)=>{
+    if(typeof(totalNoOfSweets)!='number'||typeof(sweetsConsumedInNMeters)!='number'||typeof(sweetsConsumedByKaren)!='number'||typeof(metersToTravel)!='number'){
+        return("No sweets for Karen's friend");
+    }
+    else{
+    var x=totalNoOfSweets-sweetsConsumedByKaren;
+    var y=metersToTravel*sweetsConsumedInNMeters
+    var z=y/2;
+    if(y>=x){
+     return(0);
+    }
+    else{
+        return(z);
+    }
+}
+}
 //Progression 5:
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
 //It only shows in fahrenheit. Convert the data to celsius and return it.
