@@ -54,7 +54,21 @@ sweetTooth=(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMeters, met
 //Progression 5:
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
 //It only shows in fahrenheit. Convert the data to celsius and return it.
-
+convertToCelsius=(fahrenheit)=>{
+    if(typeof(fahrenheit)=='undefined'){
+        return("Technical Error!");
+    }
+    else if(typeof(fahrenheit)=='string'){
+        return("Technical Error!");
+    }
+    else if (typeof(fahrenheit)=='object') {
+        return("Technical Error!");
+    }
+    else{
+    var x=(fahrenheit-32)*5/9;
+    return(x);
+    }
+}
 //Progression 6:
 //Lily can now do multiple things to deal with this
 //1. Take her daughter to a doctor
