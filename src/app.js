@@ -98,3 +98,12 @@ aDifficultChoice=(choice)=>{
 //Take all of Lily's strategies and concatenate them to a single var
 //Seperate the strategies by a single space
 //Return the length of the complete strategy
+consoleKaren=(strategies)=>{
+    var i=o;
+    var a='';
+    for(i=0;i<strategies.length;i++){
+        a=a+strategies[i].length+' ';
+        var completeStrategy=a.length-1;
+    }
+    return(completeStrategy);
+}
