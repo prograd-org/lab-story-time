@@ -5,6 +5,7 @@
 This is a short story about a girl named Karen and her friend. Run `index.html` to view the story. You will see that the story is incomplete. On finishing each _Trial_, a part of the story will be unlocked. Go to the `src/app.js` file and complete all the unfinished code to find out how this story ends.
 
 ## What should you do
+
 ```
 Fork this repo
 Clone this repo
@@ -12,6 +13,7 @@ Practice JavaScript Basics - Datatypes, Operators, Conditions
 ```
 
 ## How To Submit
+
 ```
 Upon completion, run the following commands:
 
