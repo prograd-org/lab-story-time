@@ -23,14 +23,13 @@ function moreAboutKaren(parents, noOfSiblings, isNuclearFamily)
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
-function doesFriendExist(ageInText, ageInNumber){
-    if((typeof ageInNumber===NaN)(typeof ageInText!=NaN))
-    {
-        return '\'NaN\'';
+function doesFriendExist(ageInText, ageInNumber) {
+    if (isNaN(ageInText)) {
+        return ageInText;
     }
-    else if((typeof ageInNumber===NaN)||(typeof ageInText===NaN)){return '\'NaN\''}
-    else if((typeof ageInNumber==='NaN')||(typeof ageInText===NaN))
-    {return '\'\'NaN\'\''}
+    else if (isNaN(ageInNumber)) {
+        return ageInNumber;
+    }
 }
 //Progression 4:
 //Lily gave Karen x sweets
@@ -38,19 +37,26 @@ function doesFriendExist(ageInText, ageInNumber){
 //On her way to the river, she ate another z sweets every n meters travelled
 //Her friend divided the remaining sweets into 2 parts for each
 //How many sweets did her friend get to eat?
-function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMeters, metersToTravel){
-if((typeof totalNoOfSweets!='number')||(typeof sweetsConsumedByKaren!='number')||(typeof sweetsConsumedInNMeters!='number')||(typeof etersToTravel!='number'))
-{
-    return 'No sweets for Karen\'s friend';
-}
-else if((totalNoOfSweets===0)&&( sweetsConsumedByKaren===0)&&( sweetsConsumedInNMeters===0)&&( metersToTravel===0))
-{
-    return 0;
-}
-else if((sweetsConsumedByKaren===totalNoOfSweets)&&(metersToTravel===0))
-{
-    return 0;
-}
+function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMeters, metersToTravel) {
+
+    if (isNaN(totalNoOfSweets) || isNaN(sweetsConsumedByKaren) || isNaN(sweetsConsumedInNMeters)
+        || isNaN(metersToTravel)) {
+        return "No sweets for Karen's friend";
+    }
+    else if (totalNoOfSweets == 0 && sweetsConsumedByKaren == 0 && sweetsConsumedInNMeters == 0
+        && metersToTravel == 0) {
+        return 0;
+    }
+    var remainingSweets = totalNoOfSweets - sweetsConsumedByKaren;
+    remainingSweets = remainingSweets - (metersToTravel * sweetsConsumedInNMeters);
+
+    if (remainingSweets > 0) {
+        return (remainingSweets / 2);
+    }
+    else {
+        return 0;
+    }
+
 }
 //Progression 5:
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
