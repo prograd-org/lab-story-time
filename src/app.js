@@ -6,6 +6,7 @@ const moreAboutHome = (address, distanceFromTown, hasNeighbours) => {
     return typeof address + typeof distanceFromTown + typeof hasNeighbours;
 }
 
+
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
